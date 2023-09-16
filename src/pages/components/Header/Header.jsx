@@ -20,11 +20,21 @@ const Header = () => {
       ]);
     const [openOptions, setOpenOptions] = useState(false)
     const [options, setOptions] = useState({
-        adult:1,
-        children:0,
-        room:1,
+        adult: 1,
+        children: 0,
+        room: 1,
 
     });
+    
+    const handleOptions = (name, operator) =>{
+        setOptions( (prev) => {
+            return {
+                prev, 
+                [name] : operator =="i" ? options[name] +1 : options[name] -1,
+            };
+        });
+    };
+
   return (
     <div className='header'>
         <div className="headerContainer">
@@ -77,22 +87,25 @@ const Header = () => {
         <div className="options">
           <div className="optionItem">
             <span className="optionText">Adult</span>
-            <button className="optionCounter">-</button>
+            <div className="optionCounter">
+                <button className="optionCounterBtn" onClick={()=>handleOptions("adult", "d")}>-</button>
             <span className="optionCounterNumber">1</span>
-            <button className="optionCounter">+</button>
+            <button className="optionCounterBtn" onClick={()=>handleOptions("adult", "i")}>+</button></div>
                 </div>  
                 <div className="optionItem">
             <span className="optionText">Children</span>
-            <button className="optionCounter">-</button>
+            <div className="optionCounter">
+                <button className="optionCounterBtn" onClick={()=>handleOptions("children", "d")}>-</button>
             <span className="optionCounterNumber">0</span>
-            <button className="optionCounter">+</button>
-                </div>  
+            <button className="optionCounterBtn" onClick={()=>handleOptions("children", "i")}>+</button></div>
+                </div>   
                 <div className="optionItem">
             <span className="optionText">Room</span>
-            <button className="optionCounter">-</button>
+            <div className="optionCounter">
+                <button className="optionCounterBtn" onClick={()=>handleOptions("room", "d")}>-</button>
             <span className="optionCounterNumber">1</span>
-            <button className="optionCounter">+</button>
-                </div>  
+            <button className="optionCounterBtn" onClick={()=>handleOptions("room", "i")}>+</button></div>
+                </div>   
         </div>
         </div>
         <div className="headerSearchItem">
