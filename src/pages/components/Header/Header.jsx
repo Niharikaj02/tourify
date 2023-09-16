@@ -29,7 +29,7 @@ const Header = () => {
     const handleOptions = (name, operator) =>{
         setOptions( (prev) => {
             return {
-                prev, 
+                ...prev, 
                 [name] : operator =="i" ? options[name] +1 : options[name] -1,
             };
         });
