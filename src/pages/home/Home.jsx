@@ -1,6 +1,7 @@
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
 import Featured from '../../components/featured/Featured';
+import Footer from '../../components/footer/Footer';
 import MailList from '../../components/mailList/MailList';
 import PropertyList from '../../components/propertyList/PropertyList';
 import './home.css'
@@ -16,6 +17,7 @@ const Home = () => {
       Browse by Property Type
       <PropertyList/>
        <MailList/>
+       <Footer/>
       </div>
     </div>
   );
