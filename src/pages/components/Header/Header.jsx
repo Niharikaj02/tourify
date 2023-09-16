@@ -10,6 +10,7 @@ import { format } from "date-fns"
 
 const Header = () => {
     const [openDate, setOpenDate] = useState(false)
+
     const [date, setDate] = useState([
         {
           startDate: new Date(),
@@ -17,6 +18,13 @@ const Header = () => {
           key: 'selection'
         }
       ]);
+    const [openOptions, setOpenOptions] = useState(false)
+    const [options, setOptions] = useState({
+        adult:1,
+        children:0,
+        room:1,
+
+    });
   return (
     <div className='header'>
         <div className="headerContainer">
@@ -65,7 +73,7 @@ const Header = () => {
 />}
         </div> <div className="headerSearchItem">
         <FontAwesomeIcon icon={faPerson} className='headerIcon' />
-        <span className='headerSearchText'> 0 adults 0 children 1 room</span>
+        <span className='headerSearchText'> {`${options.adult}adult . ${options.children}children . ${options.room} room`}</span>
         </div>
         <div className="headerSearchItem">
             <button className="headerBtn">Search</button>
