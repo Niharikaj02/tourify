@@ -64,8 +64,8 @@ const Header = ({type}) => {
         <>
         <h1 className='headerTitle'>A lifetime of discounts? Crazy</h1>
         <p className="headerDesc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil illo aliquid repudiandae autem error consequuntur distinctio quisquam! Nam ab perspiciatis quas velit repellat nisi, consectetur rerum molestiae eum eaque provident.
-        </p>
+            Discover your dream destination and everything you need to have a smooth stay!
+             </p>
         <button className="headerBtn">Sign in /  Register</button>
         <div className="headerSearch">
             <div className="headerSearchItem">

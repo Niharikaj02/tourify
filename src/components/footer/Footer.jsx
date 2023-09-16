@@ -31,7 +31,7 @@ const Footer = () => {
             </ul>
             
         </div>
-        <div className="fText"> Copyright © 1996–2023 Booking.com™. All rights reserved.
+        <div className="fText"> Copyright © 1996 - 2023 Tourify.com™. All rights reserved.
  </div>
     </div>
   )

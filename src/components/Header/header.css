@@ -46,7 +46,14 @@
     padding: 10px;
     cursor: pointer;
 }
+.headerDesc{
+    font-size: 16px;
+}
+.headerTitle {
+    font-weight: 550;
+    font-size: 40px;
 
+}
 .headerSearch{
     height: 30px;
     background-color: white;
