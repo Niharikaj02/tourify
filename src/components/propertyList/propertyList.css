@@ -1,6 +1,6 @@
 .pList{
     width: 100%;
-    min-width: 1024px;
+    max-width: 1024px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -20,7 +20,7 @@
 }
 
 .pListTitles h1{
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 5px;
 }
 
