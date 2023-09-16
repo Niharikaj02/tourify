@@ -1,9 +1,14 @@
 import React from 'react'
+import Navbar from '../components/navbar/Navbar'
+import Header from '../components/Header/Header'
+
 
 const List = () => {
   return (
     <div>
-      Hotel1
+      <Navbar />
+      <Header type = "list" />
+
     </div>
   )
 }
