@@ -1,5 +1,6 @@
 # tourify
 This is a web application created using REACT, CSS and JavaScript.
+Contains basic functions such as selecting number of travellers, selecting the place and displays the available places and options such as hotels, villas, etc.
 
 # Instructions to run the app:
 1. Open terminal in the project directory
