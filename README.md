@@ -1,6 +1,12 @@
-# tourify
-This is a web application created using REACT, CSS and JavaScript.
-Contains basic functions such as selecting number of travellers, selecting the place and displays the available places and options such as hotels, villas, etc.
+# Tourify
+## Overview
+Tourify is a web application designed to simplify the process of booking trips to Japan. It offers an intuitive user interface for selecting the number of travelers, choosing a destination, and exploring available accommodations like hotels, villas, and more. This project is built using React, CSS, and JavaScript.
+
+## Features
+1. User-Friendly Interface: An easy-to-use interface for a seamless booking experience.
+2. Select Number of Travelers: Users can specify the number of people traveling to ensure accommodation suitability.
+3. Destination Selection: Choose from a list of destinations within Japan.
+4. Accommodation Options: Explore a variety of accommodation options, including hotels, villas, and more.
 
 # Instructions to run the app:
 1. Open terminal in the project directory
